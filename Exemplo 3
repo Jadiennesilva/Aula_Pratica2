@@ -2,31 +2,32 @@
 #include<stdlib.h>
 #include <locale.h>
 
-int MA (int NU1, int NU2){
+int D(int N1, int N2){
 	
 	setlocale(LC_ALL, "portuguese_Brazil");
 	
-	int MA;
-	if (NU1 > NU2){
-	MA = NU1;
+	int MA, DA;
+	if (N1 > N2){
+	MA = N1;
 		
 	
 	}else{
-	MA = NU2;
+	MA = N2;
 	}
+	DA = 2 * MA;
 	
-	return MA;
+	return DA;
 }
 
 int main(){
-	int M , NOTA1 , NOTA2;
+	int  NOTA1 , NOTA2, D;
 	printf("Digite o primeiro numero : \n");
 	scanf("%d", &NOTA1);
 	printf("Digite o segundo numero : \n");
 	scanf("%d", &NOTA2);
 	
-	M = MA (NOTA1,NOTA2);
-	printf(" O maior numero  E : %d",M);
+	DA = D (NOTA1,NOTA2);
+	printf(" O maior numero  E : %d",DA);
 
 	
 	
