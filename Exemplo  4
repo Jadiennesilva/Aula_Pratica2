@@ -1,36 +1,35 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include<stdio.h>
+#include<stdlib.h>
+#include <locale.h>
 
-int NUM (int N){
-	int N;
-	d = 2 * N;
+int MA (int NU1, int NU2){
 	
-return d;					
-} 
-
-int main(){
-	int n, Y;
-    printf("digite um numero:");
-    scanf("%d",&n);
-    
-    printf("digite o segundo numero:");
-    scanf("%d",&n);
-    
-    x = NUM(n);
-    if(n > x){
-    	
-    printf("%d",x);
-    	
-	}else{
-
+	setlocale(LC_ALL, "portuguese_Brazil");
+	
+	int MA;
+	if (NU1 > NU2){
+	MA = NU1;
 		
+	
+	}else{
+	MA = NU2;
 	}
-    
-  
-   
-   
-   
-
-return 0;
+	
+	return MA;
 }
 
+int main(){
+	int M , NOTA1 , NOTA2;
+	printf("Digite o primeiro numero : \n");
+	scanf("%d", &NOTA1);
+	printf("Digite o segundo numero : \n");
+	scanf("%d", &NOTA2);
+	
+	M = MA (NOTA1,NOTA2);
+	printf(" O maior numero  E : %d",M);
+
+	
+	
+	
+	return 0;
+}
