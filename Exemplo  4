@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int NUM (int N){
+	int N;
+	d = 2 * N;
+	
+return d;					
+} 
+
+int main(){
+	int n, Y;
+    printf("digite um numero:");
+    scanf("%d",&n);
+    
+    printf("digite o segundo numero:");
+    scanf("%d",&n);
+    
+    x = NUM(n);
+    if(n > x){
+    	
+    printf("%d",x);
+    	
+	}else{
+
+		
+	}
+    
+  
+   
+   
+   
+
+return 0;
+}
+
