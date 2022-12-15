@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int imprimir_varios(int quantidade){
+	
+	while(quantidade){
+	printf("adoro programar\n");
+	--quantidade;
+	}
+	
+	printf("o valor de quantidade é:%d\n",quantidade);
+}
+
+int main(){
+	
+	int x;
+	
+	scanf("%d",&x);
+	imprimir_varios(x);
+	printf("o valor de x é:  %d\n", x);
+	
+	return 0;
+					
+}
